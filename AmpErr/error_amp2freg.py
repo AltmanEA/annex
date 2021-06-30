@@ -64,7 +64,7 @@ for i_exp, exp_ratio in enumerate(exp_s):
 amp_err = np.sqrt(np.mean(np.power(errors_amp, 2), 1))
 
 plt.figure()
-plt.plot(amp_err, 'blue')       # experimental
-plt.plot(errors_win, 'red')     # theoretical
+plt.plot(exp_s, amp_err,  'blue')       # experimental
+plt.plot(exp_s, errors_win,  'red')     # theoretical
 
 plt.show()
